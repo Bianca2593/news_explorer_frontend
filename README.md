@@ -174,3 +174,5 @@ Author
 👩 Bianca Nechita
 Software Engineering student at TripleTen.
 Focused on building clean, maintainable, and user-friendly web applications.
+
+echo "Submission PR note"
