@@ -17,8 +17,7 @@ function AppContent() {
   const [newsData, setNewsData] = useState([]);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
-  const [isRegisterSuccessModalOpen, setIsRegisterSuccessModalOpen] =
-    useState(false);
+  const [isRegisterSuccessModalOpen, setIsRegisterSuccessModalOpen] = useState(false);
   const [apiError, setApiError] = useState(null);
   const [hasSearched, setHasSearched] = useState(false);
   const [articlesToShow, setArticlesToShow] = useState(3);
@@ -39,7 +38,6 @@ function AppContent() {
 
     try {
       const articles = await searchNews(query);
-
       const processedArticles = articles.map((article) => ({
         ...article,
         id: article.url,
@@ -112,6 +110,7 @@ function AppContent() {
     const isAlreadySaved = savedArticles.some(
       (saved) => saved.url === articleToSave.url
     );
+
     if (!isAlreadySaved) {
       const articleWithKeyword = {
         ...articleToSave,
@@ -143,8 +142,7 @@ function AppContent() {
 
   const articlesForDisplay = newsData.slice(0, articlesToShow);
   const showMoreButtonVisible =
-    articlesForDisplay.length > 0 &&
-    articlesForDisplay.length < newsData.length;
+    articlesForDisplay.length > 0 && articlesForDisplay.length < newsData.length;
 
   const handleShowMoreClick = () => {
     setArticlesToShow((prevCount) => prevCount + 3);
@@ -158,7 +156,6 @@ function AppContent() {
 
   return (
     <>
-  
       <div className={appContainerClass}>
         <Header
           isLoggedIn={isLoggedIn}
@@ -228,10 +225,9 @@ function AppContent() {
   );
 }
 
-
 function App() {
   return (
-    <BrowserRouter basename="/news-explorer-frontend/">
+    <BrowserRouter>
       <AppContent />
     </BrowserRouter>
   );
