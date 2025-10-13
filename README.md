@@ -6,7 +6,7 @@ It integrates with a third-party news API to display real-time results, while al
 ---
 
 ## 🌐 Live Demo
-[View the deployed project on Vercel](https://newsexplorerfrontend-35hmd8top-bianca025s-projects.vercel.app)
+[View the deployed project on Vercel](https://newsexplorerfrontend.vercel.app)
 
 ---
 
