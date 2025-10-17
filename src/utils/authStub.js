@@ -1,7 +1,7 @@
 const KEY = "demo_token";
 
 // simulează logarea (oricine se poate loga)
-export function loginStub(email, password) {
+export function loginStub(email) {
   localStorage.setItem(KEY, "stub-token");
   return Promise.resolve({ token: "stub-token", name: email.split("@")[0] });
 }

@@ -12,12 +12,11 @@
   box-sizing: border-box;
   width: 100%; 
   background-image: url("../../assets/images/background-image__georgia-de-lotz--UsJoNxLaNo-unsplash.png");
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
   background-attachment: fixed; 
 }
-
 
 .hero::before {
   content: "";
@@ -37,16 +36,18 @@
 }
 
 .hero__title {
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
   font-size: 60px; 
   line-height: 64px;
   margin-bottom: 24px;
   text-align: left;
+  color: #ffffff;
 }
 
 .hero__subtitle {
   font-family: "Roboto", sans-serif;
+  font-weight: 400; 
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 48px; 
@@ -72,7 +73,6 @@
     padding: 0 24px;
   }
 }
-
 
 
 @media screen and (max-width: 500px) {

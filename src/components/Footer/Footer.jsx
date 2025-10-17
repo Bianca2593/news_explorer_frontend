@@ -12,6 +12,7 @@ function Footer() {
         </p>
         <div className="footer__right-section">
           {" "}
+          {/* New wrapper for nav links and social icons */}
           <nav className="footer__nav-links">
             <a href="/" className="footer__link">
               Home
@@ -32,7 +33,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="footer__social-icon-link footer__social-icon-github"
             >
-           
+              {/* GitHub icon will be set via CSS background-image */}
             </a>
             <a
               href="https://facebook.com"
@@ -40,7 +41,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="footer__social-icon-link footer__social-icon-facebook"
             >
-         
+              {/* Facebook icon will be set via CSS background-image */}
             </a>
           </nav>
         </div>

@@ -35,7 +35,6 @@ function NewsCard({
     if (isSavedNewsPage) {
       onDeleteArticle(url);
     } else {
-     
       if (isBookmarked) {
         onDeleteArticle(url);
       } else {
@@ -72,10 +71,12 @@ function NewsCard({
             className="news-card__icon news-card__icon_delete"
             onClick={handleBookmarkClick}
           >
+            {/* Tooltip for delete button */}
             <span className="news-card__tooltip-text">Remove from saved</span>
           </button>
         </>
       ) : (
+        
         <button
           type="button"
           className={`news-card__icon news-card__icon_bookmark ${
@@ -83,6 +84,7 @@ function NewsCard({
           }`}
           onClick={handleBookmarkClick}
         >
+          {/* Tooltip text depends on login status */}
           {!isLoggedIn && (
             <span className="news-card__tooltip-text">
               Sign in to save articles
